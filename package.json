@@ -1,0 +1,17 @@
+{
+  "name": "corteva-itune-access-plugin",
+  "version": "0.0.1",
+  "description": "Allow iTunes file sharing",
+  "cordova": {
+    "id": "corteva-itune-access-plugin",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
