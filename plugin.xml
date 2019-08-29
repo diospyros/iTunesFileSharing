@@ -13,7 +13,7 @@
             <feature name="iTunePlugin">
                 <param name="ios-package" value="iTunePlugin" />
             </feature>
-        </config-file>
+        </config-file>        
 
         <config-file parent="UIFileSharingEnabled" target="*-Info.plist" >
             <true/>
@@ -24,7 +24,15 @@
         <config-file parent="UIApplicationOpenURLOptionsOpenInPlaceKey" target="*-Info.plist" >
             <true/>
         </config-file>
-
-
     </platform>
+    
+    <platform name="android">
+        
+        <config-file target="config.xml" parent="/*">
+	        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+            <preference name="AndroidExtraFilesystems" value="files,cache,sdcard,cache-external,files-external,documents" />
+        </config-file>
+        
+    </platform>
+    
 </plugin>
